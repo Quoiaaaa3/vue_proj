@@ -21,7 +21,8 @@ export default {
         { id: 1, img: 'https://imgur.com/TGoJCKb.png' },
         { id: 2, img: 'https://imgur.com/Ob3equu.png' },
         { id: 3, img: 'https://imgur.com/WRpeXGX.png' },
-        { id: 4, img: 'https://imgur.com/UiTDHYp.png' }
+        { id: 4, img: 'https://imgur.com/UiTDHYp.png' },
+        { id: 4, img: 'https://imgur.com/tT7yufG.png' },
       ]
     }
   }
@@ -34,5 +35,6 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
+        user-select: none;
     }
 </style>

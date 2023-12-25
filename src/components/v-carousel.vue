@@ -64,11 +64,13 @@ export default {
         max-height: 600px;
         border: 2px solid;
         overflow: hidden;
+        user-select: none;
     }
 
     .v-carousel{
         display: flex;
         transition: all ease .5s;
+        user-select: none;
     }
 
     button{
