@@ -1,0 +1,38 @@
+.container {
+  background: rgb(0, 0, 0, .4);
+  border-top: 2px solid;
+  box-shadow: 0 0 7px 0 rgb(255, 255, 255, 0.8);
+  padding: 11px 0;
+  max-height: 3.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.container__buttons{
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.button{
+  font-size: 24px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background: rgb(255, 154, 170, 0.7);
+  box-shadow: 0 4px 0 rgb(255, 105, 130, 0.7);
+  padding: 0 30px;
+}
+
+.button:hover{
+  background: rgb(255, 105, 130, 0.7);
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
