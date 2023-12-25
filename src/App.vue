@@ -4,20 +4,18 @@
 </template>
 <script>
 
-import LayoutFooter from "./layout-footer/LayoutFooter.vue"
+import LayoutFooter from './layout-footer/LayoutFooter.vue'
 
 export default {
-  components:{
+  components: {
     LayoutFooter
-  } 
+  }
 }
 
 </script>
-
 
 <style>
   ::-webkit-scrollbar {
     width: 0;
   }
 </style>
-

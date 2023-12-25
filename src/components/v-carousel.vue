@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="v-carousel" 
+        <div class="v-carousel"
                 :style="{
                     'margin-left': '-' + (100 * currentSlideIndex + '%')
                 }"
@@ -9,9 +9,9 @@
                 v-for="item in carousel_data"
                 :key="item.id"
                 :item_data="item"
-                
-            />        
-        </div>        
+
+            />
+        </div>
     </div>
 
     <button class="button__left" @click="prevSlide"><img :src=arrow></button>
@@ -21,42 +21,41 @@
 
 <script>
 
-    import vCarouselItem from './v-carousel-item.vue'
+import vCarouselItem from './v-carousel-item.vue'
 
-    export default{
-        name: 'v-carousel',
-        components:{
-            vCarouselItem
-        },
-        props:{
-            carousel_data: {
-                type: Array,
-                default: () => []
-            }
-        },
-        data(){
-            return{
-                currentSlideIndex: 0,
-                arrow: "https://imgur.com/BuWhtZ0.png"
-            }
-        },
-        methods:{
-            prevSlide(){
-                if (this.currentSlideIndex > 0){
-                    this.currentSlideIndex--
-                }
-                
-            },
-
-            nextSlide(){    
-                if (this.currentSlideIndex >= this.carousel_data.length - 1){
-                    this.currentSlideIndex = 0
-                }else{
-                    this.currentSlideIndex++
-                }
-            }
-        }
+export default {
+  name: 'v-carousel',
+  components: {
+    vCarouselItem
+  },
+  props: {
+    carousel_data: {
+      type: Array,
+      default: () => []
     }
+  },
+  data () {
+    return {
+      currentSlideIndex: 0,
+      arrow: 'https://imgur.com/BuWhtZ0.png'
+    }
+  },
+  methods: {
+    prevSlide () {
+      if (this.currentSlideIndex > 0) {
+        this.currentSlideIndex--
+      }
+    },
+
+    nextSlide () {
+      if (this.currentSlideIndex >= this.carousel_data.length - 1) {
+        this.currentSlideIndex = 0
+      } else {
+        this.currentSlideIndex++
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -97,6 +96,5 @@
         right: 300px;
         transform: rotate(270deg);
     }
-
 
 </style>

@@ -19,8 +19,8 @@ const router = createRouter({
       path: '/history',
       name: 'history',
       component: () => import('../pages/main-page/Carousel.vue')
-    },  
-    
+    },
+
     {
       path: '/vacancies',
       name: 'vacancies',

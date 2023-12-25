@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <div class="cta-form">
-            <h2>Заполни форму</h2> 
+            <h2>Заполни форму</h2>
             <p>В ближайшее время с тобой свяжутся модераторы для уточнения деталей.</p>
         </div>
-        
+
         <form @submit="onSubmit" class="form">
-        
+
             <input type="text" placeholder="Ваш ник в дискорде" class="form__input" id="name" v-model="form.name" />
             <label for="name" class="form__label">Ваш ник в дискорде</label>
 
@@ -15,35 +15,34 @@
 
             <input type="text" placeholder="О вас" class="form__input" id="self" v-model="form.message" />
             <label for="self" class="form__label">О вас</label>
-            
+
             <button type="submit">Отправить</button>
         </form>
     </div>
-    
 
 </template>
 
 <script>
-    export default{
-        name: "Form",
+export default {
+  name: 'Form',
 
-        data(){
-            return{
-                form:{
-                    name: '',
-                    email: '',
-                    message: ''
-                }              
-            }
-        },
-    
-        methods: {
-            onSubmit (e) {
-                e.preventDefault()
-                console.log('Отправляемые данные:', this.form)
-            }
-        }
+  data () {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: ''
+      }
     }
+  },
+
+  methods: {
+    onSubmit (e) {
+      e.preventDefault()
+      console.log('Отправляемые данные:', this.form)
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -84,10 +83,9 @@
     .form {
       align-self: center;
     }
-    
 
     .form__input {
-        width: 250px;   
+        width: 250px;
         height: 2.5rem;
         padding: 0 1.25rem;
         border: 1px solid black;
@@ -99,32 +97,32 @@
         transform: translateY(-5rem) scale(1);
         color: rgb(255, 255, 255);
       }
-      
+
       &::placeholder {
         display: none;
         color: transparent;
-        
-        user-select: none; 
+
+        user-select: none;
       }
 
       &:not(:placeholder-shown) {
         border-top-color: rgba(0, 0, 0, 0.5);
       }
-    
+
     }
 
     .form__label {
       font-size: 1rem;
       font-weight: bold;
       color: grey;
-      display: flex;    
-      
+      display: flex;
+
       transform: translate(1.25rem,-2.5rem);
-      transform-origin: 0 0; 
+      transform-origin: 0 0;
       transition: all 500ms;
-      
-      user-select: none; 
-      
+
+      user-select: none;
+
       pointer-events: none;
     }
 
@@ -172,6 +170,5 @@
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
     }
-    
-    
+
 </style>

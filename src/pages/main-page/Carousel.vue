@@ -8,24 +8,24 @@
 
 <script>
 
-    import vCarousel from '../../components/v-carousel.vue'
+import vCarousel from '../../components/v-carousel.vue'
 
-    export default{
-        components:{
-            vCarousel
-        },
+export default {
+  components: {
+    vCarousel
+  },
 
-        data(){
-            return {
-                slidersList: [
-                    { id: 1, img: 'https://imgur.com/TGoJCKb.png' },
-                    { id: 2, img: 'https://imgur.com/Ob3equu.png' },
-                    { id: 3, img: 'https://imgur.com/WRpeXGX.png' },
-                    { id: 4, img: 'https://imgur.com/UiTDHYp.png' },
-                ],
-            }
-        }
+  data () {
+    return {
+      slidersList: [
+        { id: 1, img: 'https://imgur.com/TGoJCKb.png' },
+        { id: 2, img: 'https://imgur.com/Ob3equu.png' },
+        { id: 3, img: 'https://imgur.com/WRpeXGX.png' },
+        { id: 4, img: 'https://imgur.com/UiTDHYp.png' }
+      ]
     }
+  }
+}
 </script>
 
 <style scoped>
