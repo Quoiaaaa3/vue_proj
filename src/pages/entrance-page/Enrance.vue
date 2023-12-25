@@ -30,7 +30,7 @@
         display: 'flex',
         justifyContent: 'center'
       }">
-        <a class="button" target="_blank" href="">ВСТУПИТЬ НА ЦИНДОКУ</a>
+        <a class="button" target="_blank" href="https://discord.gg/cindocu">ВСТУПИТЬ НА ЦИНДОКУ</a>
       </div>
 
     </div>
