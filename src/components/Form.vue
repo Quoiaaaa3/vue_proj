@@ -40,6 +40,7 @@ export default {
     onSubmit (e) {
       e.preventDefault()
       console.log('Отправляемые данные:', this.form)
+      e.target.reset()
     }
   }
 }
